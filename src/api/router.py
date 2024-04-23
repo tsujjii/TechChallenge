@@ -17,6 +17,7 @@ async def get_production(request: RequestProduction):
     try:
         usecase = ProductionUsecase(request)
         response = usecase.execute()
+        #TODO Criar um objeto de resposta, optando pelo retorno do dataset ou apenas um 204
         return JSONResponse()
     except Exception as ex:
         return JSONResponse(content=f'Houve um problema ao realizar a solicitação: {ex}', status_code=status.HTTP_500_INTERNAL_SERVER_ERROR)
