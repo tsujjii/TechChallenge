@@ -39,7 +39,6 @@ class ProductionUsecase():
             except Exception as ex: 
                 raise Exception(f"Não foi possível realizar a sua requisição, verifique os parametros informados: {ex}")
 
-        #TODO Validar se o dataset de resposta está vazio
         dataset_production = self.__trata_response_dataset(dataset_production)
         del dfs
         return dataset_production
