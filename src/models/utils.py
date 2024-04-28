@@ -37,6 +37,6 @@ def scrape_table(url: str, year: int):
                 elif classe == 'tb_subitem':
                     sub_items.append((categoria, produto, quantidade))
 
-            df_items = pd.DataFrame(sub_items, columns=['item', 'categoria', 'quantidade'])
+            df_items = pd.DataFrame(sub_items, columns=['categoria', 'item', 'quantidade'])
             df_items['ano'] = year
             return df_items

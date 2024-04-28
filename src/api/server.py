@@ -7,6 +7,7 @@ from .router import \
 
 
 app.include_router(production_router, tags=["v1"])
+app.include_router(processing_router, tags=["v1"])
 
 
 if __name__ == "__main__":
