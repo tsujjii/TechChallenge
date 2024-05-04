@@ -2,12 +2,16 @@ from .router import \
     app, \
     processing_router, \
     production_router, \
-    export_router, \
-    import_router
+    commercialization_router, \
+    import_router, \
+    export_router
 
 
 app.include_router(production_router, tags=["v1"])
 app.include_router(processing_router, tags=["v1"])
+app.include_router(commercialization_router, tags=["v1"])
+app.include_router(import_router, tags=["v1"])
+app.include_router(export_router, tags=["v1"])
 
 
 if __name__ == "__main__":

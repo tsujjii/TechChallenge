@@ -12,9 +12,7 @@ A ideia é criar um scraper para consumir os dados do site da Embrapa, das segui
 > Para isso é necessário validar se a informação local está atualizada (inicilamente uma validação simples de data ou apenas o mês em que foi gerada)
 
 **2** - A ideia é criar uma rota (usecase) para cada categoria, assim podendo parametrizar adequadamente para cada categoria. 
-Os dados devem ser gerados e salvos como parquet/csv, o retorno deve ser um 204 ou o arquivo csv.
-
-#TODO Finalizar documentação inicial
+Os dados devem ser gerados e salvos como csv, o retorno deve ser um 204 ou o arquivo csv.
 
 
 ### Após clonar o Repositório.
