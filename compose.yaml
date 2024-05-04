@@ -1,0 +1,14 @@
+
+
+networks:
+  tech_challenge:
+    external: False
+
+services:
+  
+  web:
+    build: .
+    ports:
+      - "15420:5000"
+    networks:
+      - tech_challenge

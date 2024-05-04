@@ -1,12 +1,10 @@
-from fastapi import FastAPI, status, APIRouter
+from fastapi import status, APIRouter
 from fastapi.responses import JSONResponse, Response
 from ..usecases.data_import import RequestImport, ImportUsecase
 from ..usecases.data_export import RequestExport, ExportUsecase
 from ..usecases.data_production import RequestProduction, ProductionUsecase
 from ..usecases.data_processing import RequestProcessing, ProcessingUsecase
 from ..usecases.data_commercialization import RequestCommercialization, CommercializationUsecase
-
-app = FastAPI()
 
 production_router = APIRouter()
 processing_router = APIRouter()
