@@ -9,11 +9,12 @@ A ideia é criar um scraper para consumir os dados do site da Embrapa, das segui
 
 ### Definições
 **1** - Inicialmente, a API terá as opções para consumir e retornar os dados, ou apenas consumir e armazenar os dados localmente.
-> Para isso é necessário validar se a informação local está atualizada (inicilamente uma validação simples de data ou apenas o mês em que foi gerada)
 
 **2** - A ideia é criar uma rota (usecase) para cada categoria, assim podendo parametrizar adequadamente para cada categoria. 
 Os dados devem ser gerados e salvos como csv, o retorno deve ser um 204 ou o arquivo csv.
 
+### Deploy
+Inicialmente o deploy da aplicação foi realizado utilizando a plataforma [Render](https://dashboard.render.com), portanto, já está disponível para que possa ser utilizada e testata neste [link](https://techchallenge-dbkt.onrender.com/docs#/).
 
 ### Após clonar o Repositório.
 
