@@ -13,7 +13,7 @@ import_router = APIRouter()
 export_router = APIRouter()
 
 
-@production_router.post('/get_production')
+@production_router.post('/api/production')
 async def get_production(request: RequestProduction):
     """Produção de vinhos, sucos e derivados do Rio Grande do Sul"""
 
@@ -36,7 +36,7 @@ async def get_production(request: RequestProduction):
     except Exception as ex:
         return JSONResponse(content=f'Houve um problema ao realizar a solicitação: {ex}', status_code=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
-@processing_router.post('/get_processing')
+@processing_router.post('/api/processing')
 async def get_processing(request: RequestProcessing):
     """Quantidade de uvas processadas no Rio Grande do Sul"""
 
@@ -58,7 +58,7 @@ async def get_processing(request: RequestProcessing):
     except Exception as ex:
         return JSONResponse(content=f'Houve um problema ao realizar a solicitação: {ex}', status_code=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
-@commercialization_router.post('/get_commercialization')
+@commercialization_router.post('/api/commercialization')
 async def get_commercialization(request: RequestCommercialization):
     """Comercialização de vinhos e derivados no Rio Grande do Sul"""
 
@@ -80,7 +80,7 @@ async def get_commercialization(request: RequestCommercialization):
     except Exception as ex:
         return JSONResponse(content=f'Houve um problema ao realizar a solicitação: {ex}', status_code=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-@import_router.post('/get_import')
+@import_router.post('/api/import')
 async def get_import(request: RequestImport):
     """Importação de derivados de uva"""
 
@@ -102,7 +102,7 @@ async def get_import(request: RequestImport):
     except Exception as ex:
         return JSONResponse(content=f'Houve um problema ao realizar a solicitação: {ex}', status_code=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
-@export_router.post('/get_export')
+@export_router.post('/api/export')
 async def get_export(request: RequestExport):
     """Exportação de derivados de uva"""
 
