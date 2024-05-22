@@ -16,6 +16,10 @@ Os dados devem ser gerados e salvos como csv, o retorno deve ser um 204 ou o arq
 ### Deploy
 Inicialmente o deploy da aplicação foi realizado utilizando a plataforma [Render](https://dashboard.render.com), portanto, já está disponível para que possa ser utilizada e testata neste [link](https://techchallenge-dbkt.onrender.com/docs#/).
 
+![image](https://github.com/tsujjii/TechChallenge/assets/114022011/87570dcb-2c98-4d97-8048-2380e3445703)
+
+
+
 ### Após clonar o Repositório.
 
 ```shell
